@@ -4,7 +4,7 @@ Fluent Launcher 的插件化接口仓库，该仓库源代码基于 [dnchattan/w
 目前仅 Fluent Launcher `Preview 通道` 的部分版本支持了该接口以便加载插件，  
 我们目前正在维护的插件只有 [FluentLauncher.Extension.ConnectX](https://github.com/Xcube-Studio/FluentLauncher.Extension.ConnectX)
 
-# 使用示例
+## 使用示例
 
 以下代码取自 [FluentLauncher.Extension.ConnectX](https://github.com/Xcube-Studio/FluentLauncher.Extension.ConnectX) 仓库
 ``` CSharp
