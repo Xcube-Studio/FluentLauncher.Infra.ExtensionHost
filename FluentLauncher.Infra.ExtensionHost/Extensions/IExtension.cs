@@ -9,6 +9,8 @@ public interface IExtension
 {
     string Name { get; }
 
+    string Description { get; }
+
     Dictionary<string, (Type, Type)> RegisteredPages { get; }
 
     Dictionary<string, (Type, Type)> RegisteredDialogs { get; }
