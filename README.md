@@ -17,7 +17,7 @@ public class ConnectXExtension : IExtension, INavigationProviderExtension
 {
     public string Name => "FluentLauncher.Extension.ConnectX"; // 插件名称
 
-    public static IServiceProvider? Services { get; private set; } // 由 Fluent Launcher 方注入的 IServiceProvider
+    public static IServiceProvider? Services { get; private set; } // 由 Fluent Launcher 方注入的 IServiceProvider ，从 IExtension.SetServiceProvider 设置
 
     public static string ExtensionFolder { get; private set; } = null!; // 由 Fluent Launcher 方分配的插件配置文件目录，从 IExtension.SetExtensionFolder 设置
 
@@ -55,7 +55,7 @@ public class ConnectXExtension : IExtension, INavigationProviderExtension
         });
     }
 
-    // 
+    // 由 Fluent Launcher 方提供的 IServiceProvider ，依赖注入服务
     void IExtension.SetServiceProvider(IServiceProvider serviceProvider)
     {
         Services = serviceProvider;

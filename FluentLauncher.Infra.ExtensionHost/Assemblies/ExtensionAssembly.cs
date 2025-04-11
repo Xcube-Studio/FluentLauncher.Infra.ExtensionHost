@@ -124,7 +124,7 @@ public partial class ExtensionAssembly : IExtensionAssembly
             if (disposing)
             {
                 Disposables?.Dispose();
-                ExtensionContext?.Unload();
+                //ExtensionContext?.Unload();
             }
 
             IsDisposed = true;
